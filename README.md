@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Flipcart Capstone Project: Multi-Modal Return Risk & Image Classification System
 
 ## Executive Summary
@@ -75,3 +76,7 @@ The system dynamically processes incoming payloads through localized operational
 4.  **Downstream Node Resolution:** Connects data streams cleanly to either the Part 1 scikit-learn pipeline or confirms active connections to the Part 2 PyTorch ResNet framework.
 
 This infrastructure circumvents runtime compatibility limitations on legacy local environments, providing robust, instantaneous execution of the unified multi-modal system.
+=======
+# order-intelligence-support-system
+This capstone project involves building a single intelligent AI assistant that handles three different customer service scenarios instead of creating three separate systems. 
+>>>>>>> b109c4cbbee352cb0268d8c09d0fee0894f2636e
