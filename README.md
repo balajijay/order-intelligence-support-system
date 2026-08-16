@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Flipcart Capstone Project: Multi-Modal Return Risk & Image Classification System
 
 ## Executive Summary
@@ -79,4 +78,3 @@ This infrastructure circumvents runtime compatibility limitations on legacy loca
 =======
 # order-intelligence-support-system
 This capstone project involves building a single intelligent AI assistant that handles three different customer service scenarios instead of creating three separate systems. 
->>>>>>> b109c4cbbee352cb0268d8c09d0fee0894f2636e
