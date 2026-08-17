@@ -5,6 +5,25 @@ This project implements an end-to-end multi-modal artificial intelligence system
 
 ---
 
+## 🚀 Installation & Quick Start
+
+If you are pulling this repository to your local system, you can use the automated bash scripts to handle environment isolation, package installation, and model training.
+
+### 1. Project Setup
+Open your terminal inside the project directory and run the setup script. This will automatically create a Python virtual environment (`venv`), install required frameworks (PyTorch, Scikit-Learn, Pandas), and execute the model training pipelines:
+```bash
+chmod +x setup.sh run.sh
+./setup.sh
+```
+
+### 2. Running the System
+Once the setup script completes successfully, launch the main intelligent AI assistant anytime by running:
+```bash
+./run.sh
+```
+
+---
+
 ## Part 1: Return Risk Prediction & Tabular Analysis
 
 ### 1. Missing-at-Random (MAR) Analysis
