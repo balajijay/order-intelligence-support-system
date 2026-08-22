@@ -1,1 +1,5 @@
 venv/
+
+__pycache__/
+data/feature_cache/
+*_old.py
