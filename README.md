@@ -166,3 +166,47 @@ source .venv/bin/activate
 The `.venv/` directory, Python caches, and generated feature caches are excluded from Git.
 
 Warnings from Hugging Face about deprecated `resume_download` behavior do not affect execution.
+
+## Windows setup
+
+Windows users can run the project with PowerShell.
+
+### Requirements
+
+- Windows 10 or later
+- Python 3.11
+- Git
+
+Clone the repository:
+
+```powershell
+git clone https://github.com/balajijay/order-intelligence-support-system.git
+cd order-intelligence-support-system
+```
+
+Allow local PowerShell scripts:
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+```
+
+Run setup:
+
+```powershell
+.\setup.ps1
+```
+
+Run the application:
+
+```powershell
+.\run.ps1
+```
+
+Run tests:
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+python -m pytest -q
+```
+
+Create a new `.venv` on Windows. Do not copy the macOS `.venv` directory.
