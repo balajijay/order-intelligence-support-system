@@ -1,0 +1,14 @@
+[
+  {"id":"return_apparel","title":"Apparel returns","text":"Apparel items can be returned within 7 days of delivery. Items must be unused, unwashed, and have original tags attached."},
+  {"id":"return_footwear","title":"Footwear returns","text":"Footwear can be returned within 7 days of delivery. The product must be unworn and returned with its original packaging."},
+  {"id":"return_electronics","title":"Electronics returns","text":"Electronics can be returned within 10 days of delivery for eligible defects or damage. Serial numbers and accessories must match the order."},
+  {"id":"return_home","title":"Home returns","text":"Eligible home products can be returned within 10 days of delivery. Products must be unused and packed securely."},
+  {"id":"beauty_returns","title":"Beauty returns","text":"Beauty products can be returned within 7 days only when unopened or damaged on arrival. Opened hygiene products are not eligible."},
+  {"id":"cod_refund","title":"COD refunds","text":"Approved COD refunds are processed to the customer's verified bank account or wallet. Refunds usually arrive within 5 to 7 business days after approval."},
+  {"id":"prepaid_refund","title":"Prepaid refunds","text":"Approved prepaid-order refunds are sent to the original payment method. Banks or payment providers may require 3 to 5 business days."},
+  {"id":"delivery_standard","title":"Standard delivery SLA","text":"Standard delivery generally takes 3 to 7 business days after order confirmation. The estimated date shown at checkout is the applicable commitment."},
+  {"id":"delivery_delay","title":"Delayed delivery","text":"If an order passes its estimated delivery date, customers can track the latest status in the order page. Support may investigate prolonged delays."},
+  {"id":"reverse_pickup","title":"Reverse pickup eligibility","text":"Reverse pickup is available for eligible pin codes and products. The item must be packed according to the return instructions."},
+  {"id":"reverse_pickup_attempt","title":"Reverse pickup attempts","text":"The courier may make multiple pickup attempts when the customer is unavailable. Customers should keep the package ready with labels attached."},
+  {"id":"non_returnable","title":"Non-returnable products","text":"Personalized products, opened hygiene items, and products marked non-returnable on the listing cannot normally be returned. Damaged-on-arrival cases may be reviewed separately."}
+]
