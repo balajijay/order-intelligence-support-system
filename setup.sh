@@ -1,29 +1,31 @@
 #!/bin/bash
-# Exit immediately if any command encounters an error
 set -e
 
-echo "📦 Creating Python virtual environment..."
-python3 -m venv venv
+PROJECT_DIR="$(cd "$(dirname "$0")" && pwd)"
+cd "$PROJECT_DIR"
 
-echo "🔌 Activating virtual environment..."
-source venv/bin/activate
+echo "Creating Python 3.11 environment..."
+python3.11 -m venv .venv
 
-echo "🔄 Upgrading internal package manager..."
-pip install --upgrade pip
+source .venv/bin/activate
 
-echo "🧬 Installing Scientific Data Frameworks..."
-pip install numpy pandas scikit-learn
+python -m pip install --upgrade pip
+python -m pip install \
+  "numpy==1.26.4" \
+  "pandas" \
+  "scikit-learn==1.3.2" \
+  "joblib" \
+  "pillow" \
+  "torch==2.2.2" \
+  "torchvision==0.17.2" \
+  "sentence-transformers==2.7.0" \
+  "transformers==4.41.2" \
+  "tokenizers==0.19.1" \
+  "faiss-cpu==1.8.0" \
+  "packaging" \
+  "langgraph" \
+  "pytest"
 
-echo "🧠 Installing Deep Learning Neural Networks..."
-pip install torch torchvision matplotlib
-
-echo "⚙️  Running pipeline training engine (Risk Model)..."
-python3 return_risk.py
-
-echo "🧪 Testing real-time transaction checking script..."
-python3 predict_order.py
-
-echo "🖼️  Downloading Fashion MNIST & training ResNet-18..."
-python3 image_classify.py
-
-echo "✅ System environment fully compiled and ready!"
+echo "Dependencies installed successfully."
+echo "Activate the environment with: source .venv/bin/activate"
+echo "Run the application with: ./run.sh"

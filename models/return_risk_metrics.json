@@ -1,0 +1,110 @@
+{
+  "dataset_shape": [
+    6000,
+    13
+  ],
+  "return_rate": 0.2275,
+  "missing_rating_rate": 0.1305,
+  "logistic_default": {
+    "accuracy": 0.5925,
+    "f1": 0.3925465838509317,
+    "recall": 0.5787545787545788,
+    "precision": 0.29699248120300753,
+    "roc_auc": 0.625093353248693
+  },
+  "logistic_best_threshold": {
+    "threshold": 0.44,
+    "accuracy": 0.5025,
+    "f1": 0.40949554896142437,
+    "recall": 0.7582417582417582,
+    "precision": 0.2804878048780488,
+    "roc_auc": 0.625093353248693
+  },
+  "random_forest_best_params": {
+    "classifier__max_depth": 6,
+    "classifier__n_estimators": 100
+  },
+  "random_forest_cv_roc_auc": 0.6178362757711738,
+  "random_forest_test_roc_auc": 0.6142861094317404,
+  "t_rf": 0.47,
+  "random_forest_threshold_metrics": {
+    "threshold": 0.47,
+    "accuracy": 0.605,
+    "f1": 0.40302267002518893,
+    "recall": 0.5860805860805861,
+    "precision": 0.30710172744721687,
+    "roc_auc": 0.6142861094317404
+  },
+  "top_impurity_features": {
+    "categorical__payment_method_COD": 0.16646112570863122,
+    "numeric__price_inr": 0.1371158280613195,
+    "numeric__customer_tenure_days": 0.1074306316901857,
+    "numeric__delivery_distance_km": 0.09724351393680254,
+    "numeric__discount_pct": 0.08901062015778392
+  },
+  "top_permutation_features": {
+    "payment_method": 0.09746118678157509,
+    "price_inr": 0.008015141995724473,
+    "num_previous_returns": 0.007110257595694447,
+    "product_category": 0.004618861900415205,
+    "delivery_days": -0.0004156936195771399
+  },
+  "category_subgroups": [
+    {
+      "product_category": "Apparel",
+      "count": 385,
+      "recall": 0.58,
+      "precision": 0.3085
+    },
+    {
+      "product_category": "Beauty",
+      "count": 116,
+      "recall": 0.6129,
+      "precision": 0.4419
+    },
+    {
+      "product_category": "Electronics",
+      "count": 261,
+      "recall": 0.4615,
+      "precision": 0.2791
+    },
+    {
+      "product_category": "Footwear",
+      "count": 217,
+      "recall": 0.625,
+      "precision": 0.3608
+    },
+    {
+      "product_category": "Home",
+      "count": 221,
+      "recall": 0.7059,
+      "precision": 0.2243
+    }
+  ],
+  "payment_subgroups": [
+    {
+      "payment_method": "COD",
+      "count": 503,
+      "recall": 0.9613,
+      "precision": 0.3157
+    },
+    {
+      "payment_method": "Prepaid_Card",
+      "count": 283,
+      "recall": 0.0612,
+      "precision": 0.25
+    },
+    {
+      "payment_method": "Prepaid_UPI",
+      "count": 294,
+      "recall": 0.125,
+      "precision": 0.3158
+    },
+    {
+      "payment_method": "Wallet",
+      "count": 120,
+      "recall": 0.0952,
+      "precision": 0.1111
+    }
+  ]
+}

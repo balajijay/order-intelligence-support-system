@@ -1,12 +1,9 @@
 #!/bin/bash
+set -e
 
-# Auto-locate and activate the project environment safely
-if [ -d "venv" ]; then
-    source venv/bin/activate
-else
-    echo "❌ Error: Virtual environment 'venv' not found. Please run ./setup.sh first."
-    exit 1
-fi
+source .venv/bin/activate
+export OMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+export TOKENIZERS_PARALLELISM=false
 
-echo "🚀 Compiling state graph engine and executing routing checks..."
-python3 agent.py
+python agent.py
